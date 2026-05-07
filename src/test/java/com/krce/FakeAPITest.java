@@ -64,13 +64,14 @@ public class FakeAPITest {
                 .body("price",Matchers.everyItem(Matchers.allOf(Matchers.greaterThanOrEqualTo(100),Matchers.lessThanOrEqualTo(900))));
     }
     @Test
-    public void testCreateCategoriesById(){
+    public void testCreateCategories(){
+        String name = "Riyaz_" + System.currentTimeMillis();
         String body= """
                 {
-                    "name": "Riyaz",
+                    "name": "%s",
                     "image": "https://placeimg.com/640/480/any"
                 }
-                """;
+                """.formatted(name);
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .body(body)
@@ -79,7 +80,7 @@ public class FakeAPITest {
                 .then()
                 .log().all()
                 .statusCode(201)
-                .body("name",Matchers.equalTo("Riyaz"))
+                .body("name",Matchers.equalTo(name))
                 .body("image",Matchers.equalTo("https://placeimg.com/640/480/any"));
 
     }
