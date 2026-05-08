@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06a3eacb-8490-44e5-b005-4b50cdb75fce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/krce/AuthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/javatest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/javatest.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/krce/FakeAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/krce/FakeAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.FakeAPITest.testCreateCategories">
+  <component name="RunManager" selected="TestNG.AuthTest">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="FakeAPITest" />
       <method v="2">
@@ -49,6 +51,41 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="FakeAPITest" />
       <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.krce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.krce" />
+      <option name="MAIN_CLASS_NAME" value="com.krce.AuthTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthTest.testRegister" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.krce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.krce" />
+      <option name="MAIN_CLASS_NAME" value="com.krce.AuthTest" />
+      <option name="METHOD_NAME" value="testRegister" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -63,41 +100,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.krce" />
       <option name="MAIN_CLASS_NAME" value="com.krce.CategoryTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CategoryTest.testUpdateCategory" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.krce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.krce" />
-      <option name="MAIN_CLASS_NAME" value="com.krce.CategoryTest" />
-      <option name="METHOD_NAME" value="testUpdateCategory" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CategotyTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.krce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.krce" />
-      <option name="MAIN_CLASS_NAME" value="com.krce.CategotyTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -143,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AuthTest" />
+        <item itemvalue="TestNG.AuthTest.testRegister" />
         <item itemvalue="TestNG.FakeAPITest.testCreateCategories" />
         <item itemvalue="TestNG.UsersTest.testGetUsers" />
         <item itemvalue="TestNG.CategoryTest" />
-        <item itemvalue="TestNG.CategoryTest.testUpdateCategory" />
-        <item itemvalue="TestNG.CategotyTest" />
       </list>
     </recent_temporary>
   </component>
